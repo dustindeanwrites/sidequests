@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIDEQUESTS</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <h1>SIDEQUESTS</h1>
+        <div id="turns">
+            <h2>Turns / Dungeons: <span id="turns-count">0</span></h2>
+            <button onclick="subtractTurns()">-</button>
+        </div>
+    </header>
+
+    <div class="category">
+        <h2>DO TODAY</h2>
+        <ul id="today-list"></ul>
+        <button class="add-btn" onclick="addTask('today')">+ Add Task</button>
+    </div>
+
+    <div class="category">
+        <h2>DO THIS WEEK</h2>
+        <ul id="week-list"></ul>
+        <button class="add-btn" onclick="addTask('week')">+ Add Task</button>
+    </div>
+
+    <div class="category">
+        <h2>DO THIS MONTH</h2>
+        <ul id="month-list"></ul>
+        <button class="add-btn" onclick="addTask('month')">+ Add Task</button>
+    </div>
+
+    <div class="category">
+        <h2>DO THIS YEAR</h2>
+        <ul id="year-list"></ul>
+        <button class="add-btn" onclick="addTask('year')">+ Add Task</button>
+    </div>
+
+    <div class="category">
+        <div class="collapsible" onclick="toggleCompletedSection()">COMPLETED</div>
+        <ul id="completed-list" style="display: none;"></ul>
+    </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
